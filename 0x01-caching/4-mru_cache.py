@@ -4,6 +4,7 @@
 from base_caching import BaseCaching
 from collections import OrderedDict
 
+
 class MRUCache(BaseCaching):
     """
     MRUCache defines a caching system using the MRU algorithm

@@ -4,6 +4,7 @@
 from base_caching import BaseCaching
 from collections import OrderedDict
 
+
 class LRUCache(BaseCaching):
     """
     LRUCache defines a caching system using the LRU algorithm
@@ -47,4 +48,3 @@ class LRUCache(BaseCaching):
             self.lru_queue.move_to_end(key)
             return self.cache_data[key]
         return None
-
